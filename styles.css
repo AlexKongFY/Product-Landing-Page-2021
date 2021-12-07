@@ -1,0 +1,135 @@
+
+/*
+: root {
+    --clr-primary-300: #F3EED9;
+    --clr-primary-400: #824936;
+
+    --clr-neutral-100: #FFF;
+    --clr-neutral-900: #222C2A;
+
+    --ff-primary: "Roboto", san-serif;
+    --ff-accent: "Playfair Display", serif;
+}
+*/
+a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 8rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+body,
+h1,
+h2, 
+p,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+section {
+    padding: 4rem 0;
+}
+
+
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+}
+
+
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+iframe,
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* split reset display flex to mobile view */
+.split {
+    display: flex;
+    flex-direction: column-reverse ;
+}
+
+/*
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+/* align img same sizes consistency /    
+    .split > * {
+        flex-basis: 100%
+    }
+/* margin gap btw img and wording /
+    .split > * + * {
+        margin-left: 2rem;
+    }
+}
+*/
+
+/* additional adjustments on position/display/width/justify-content/box-sizing */
+header {
+    background-color: #F3EED9;
+    color: #000;
+    position: fixed;
+    padding-top: 0.5em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+
+
+#Product {
+    background-color: #FFF;
+    color:black;
+}
+
+
+#Accessories {
+    background-color: #222C2A;
+    color: #FFF
+}
+
+footer,
+#Contacts {
+    background-color: #824936;
+    color: #FFF;
+    text-align: center;
+}
+
+
+footer {
+    font-size: 0.8rem;
+} 

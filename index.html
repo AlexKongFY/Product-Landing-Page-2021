@@ -5,21 +5,93 @@
 		<title>Product Landing Page</title>
 		<link rel="stylesheet" href="styles.css">
 		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">	
+		<style>
+			@media screen and (min-width: 768px) {
+    .container {
+        margin: auto;
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        margin: auto;
+        max-width: 540px;
+    }
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+	position: fixed;
+	text-transform: uppercase;
 	
+}
+
+
+		</style>
 	</head>
 
-	<body> 
-		<div class="container">	
-			<header id="header">
-			<h1>Coffee Express</h1>
-			<p>Home Delivery for Coffee Addicts</p>
-			</header>
+	<body> 	
+		<header id="header">
+			<nav id="nav-bar">
+				<a href="/">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Sennheiser-logo-new.png/1280px-Sennheiser-logo-new.png" alt="logo" width="200px" id="header-img"/>
+				</a>
+				<a href="#">
+					<a class="nav-link" href="#Product">Product</a>
+					<a class="nav-link" href="#Accessories">Accessories</a>
+					<a class="nav-link" href="#Contacts">Contacts</a>
+				</a>
+			</nav>
+		</header>
+		
+		<section id="Product">
+			<div class="container">
+				<div class="split">
+					<div>
+						<h1>Sennheiser's Headphone HD7 DJ Set for Audiophiles</h1>
+						<p>Limited headphone series set that is designed for portability and convenient for audiophiles' daily usage. This combines with the best listening headphone and IFI's portable DAC/AMP device.
+						Promotion Price at <u><em>$500.</em></u></p>
+					</div>
+					<div>
+						<img src="images/senniheiser HD7 DJ.jpg" alt="senniheiser headphone HD7 DJ" width="370px" height="370px" id="headphone-img"/>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="Accessories">
+			<div class="container">
+				<div class="split">
+					<div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/zbav9j_-hlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+					</div>
+					<div>
+						<h2>Paired with IFI's portable DAC and Headphone Amplifier</h2>
+						<p>In order to enhance the sound experience further, Senniheiser's headphones is paired with IFI's nano iDSD Black Label portable DAC. 
+						The music quality is greatly improved with a warm tone sound and clarity.</p>
+					</div>
+				<div> 
+			</div>
+		</section>
 
-			
-			<footer>
-				<p>Created by Alex Kong &copy 2021</p>
-			</footer>
-		</div>
+		<section id="Contacts">	
+			<div class="container">
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<h2 class="text-center">Contacts</h2>
+					<p class="text-center">If interested, please kindly provide your email address for further updates.</p>
+					<input type="email" name="email" id="email" placeholder="Enter your email address" required/>
+					<input type="submit" name="submit" value="SUBMIT" id="submit"/>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<p class="text-center">Created by Alex Kong &copy 2021</p>
+		</footer>
+	
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
